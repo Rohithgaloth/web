@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Directory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Our Teams</h1>
+  <div class="team-container">
+    <a href="team1.html" class="team-item">
+      <img src="team1-logo.png" alt="Team 1 Logo">
+      <p>Team 1</p>
+    </a>
+    <a href="team2.html" class="team-item">
+      <img src="team2-logo.png" alt="Team 2 Logo">
+      <p>Team 2</p>
+    </a>
+    <!-- Repeat for other teams -->
+  </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team 1 Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Team 1 Members</h1>
+  <div class="member-container">
+    <div class="member-item">
+      <img src="member1-photo.jpg" alt="Member 1 Photo">
+      <p>Member 1</p>
+      <a href="https://linkedin.com/in/member1" target="_blank">
+        <img src="linkedin-icon.png" alt="LinkedIn Icon">
+      </a>
+    </div>
+    <!-- Repeat for other members -->
+  </div>
+  <button onclick="window.location.href='index.html'">Back</button>
+</body>
+</html>
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.team-container, .member-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-item, .member-item {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: transform 0.3s;
+}
+
+.team-item img, .member-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.team-item:hover, .member-item:hover {
+  transform: scale(1.1);
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
